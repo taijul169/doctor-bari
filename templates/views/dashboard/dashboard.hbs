@@ -1,0 +1,142 @@
+{{>header}}
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse " style="">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="#"><img src="/image/user.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Foysal</h5>
+          <p class="text-center">ADMIN</p>
+          <li>
+            <a class="active " href="/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+         <li class="sub-menu">
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-ambulance"></i>
+              <span>Mnage User/Role</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/user">Manage Users</a></li>
+              <li><a href="/dashboard/role">Roles</a></li>
+
+            </ul>
+          </li>
+          
+        <li class="sub-menu">
+            <a class=" " href="/dashboard/ambulance">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>Ambulance List</span>
+              </a>
+          </li>
+         <li class="sub-menu">
+
+            <a class=" "
+            href="/dashboard/doctor"><i class="glyphicon glyphicon-user"></i> Doctor List</a>
+          </li>
+        
+         
+                  <li class="sub-menu">
+             <a class=" " href="/dashboard/hospital"> <i class="fa fa-h-square"></i> Hospital List</a>
+          </li>
+                
+                    <li class="sub-menu">
+            <a class="" href="/dashboard/donor">
+              <i class="glyphicon glyphicon-tint"></i>
+              <span>Blood Donar</span>
+              </a>
+            <!-- <ul class="sub">
+              <li><a href="grids.html">Donar List</a></li>
+            </ul> -->
+          </li>
+          
+          
+                   <li class="sub-menu">
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-youtube-play"></i>
+              <span>Education</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/education/create">Add Video</a></li>
+              <li><a href="/dashboard/education">Video list</a></li>
+            </ul>
+          </li>
+
+        
+                </ul>
+      </br>
+      </br>
+      </br>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+
+    <section id="main-content">
+      <section class="wrapper">
+       <!--  -->
+      <section class="wrapper">
+        
+          <!-- /col-md-4 -->
+        <div class="row">
+          <div class="col-md-3 col-sm-3 mb">
+            <div class="green-panel pn">
+              <div class="green-header">
+                <h5>Total Doctor</h5>
+              </div>
+              <canvas id="serverstatus03" height="20" width="120"></canvas>
+              
+              <h3>3 Doctors</h3>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-3 mb">
+            <div class="green-panel pn">
+              <div class="green-header">
+                <h5>Total Hospital</h5>
+              </div>
+              <canvas id="serverstatus03" height="20" width="120"></canvas>
+              
+              <h3>4 hospitals</h3>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 mb">
+            <div class="green-panel pn">
+              <div class="green-header">
+                <h5>Total Ambulance</h5>
+              </div>
+              <canvas id="serverstatus03" height="20" width="120"></canvas>
+              <h3>7 Ambulances</h3>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 mb">
+            <div class="green-panel pn">
+              <div class="green-header">
+                <h5>Total Blood Donor</h5>
+              </div>
+              <canvas id="serverstatus03" height="20" width="120"></canvas>
+              
+              <h3>3 Donors</h3>
+            </div>
+        </div>
+
+        </div>
+              
+        
+
+      </section>
+      </section>
+    </section>
+    <!--main content end-->
+{{>footer}}

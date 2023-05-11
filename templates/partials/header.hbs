@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>DoctorBari</title>
+
+  <!-- Favicons -->
+  <link href="/admin/img/favicon.png "  rel="icon">
+  <link href="/admin/img/apple-touch-icon.png "  rel="apple-touch-icon">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href= "/admin/lib/bootstrap/css/bootstrap.min.css "  rel="stylesheet">
+  <!--external css-->
+  <link href="/admin/lib/font-awesome/css/font-awesome.css "  rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/admin/css/zabuto_calendar.css " >
+  <link rel="stylesheet" type="text/css" href="/admin/lib/gritter/css/jquery.gritter.css "/>
+
+  <link rel="stylesheet" href="/admin/lib/select2/dist/css/select2.min.css">
+<!-- datatabls css -->
+
+  <link href="/admin/lib/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="/admin/lib/advanced-datatable/css/demo_table.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" type="text/css" href="/admin/css/toastr.min.css "/>
+  <!-- Custom styles for this template -->
+  <script src="/admin/lib/chart-master/Chart.js "></script>
+
+  <link href="/admin/css/style.css " rel="stylesheet">
+  <link href="/admin/css/style-responsive.css " rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="/dashboard" class="logo"><b>Doctor<span>Bari</span></b></a>
+      <!--logo end-->
+
+
+
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- settings start -->
+
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+
+          <!-- inbox dropdown end -->
+          <!-- notification dropdown start-->
+
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li>
+              <a class="logout" href="/dashboard/profile">
+               Profile
+              </a>
+          </li>
+          <li>
+              <a class="logout" href="/dashboard/logout"
+                  onclick="event.preventDefault();
+                           document.getElementById('logout-form').submit();">
+                  Logout
+              </a>
+
+              <form id="logout-form" action="/dashboard/logout" method="POST" style="display: none;">
+                  <input type="hidden" name="_token" value="NLPGwxSJWbeqpMyr9ueWmd9Qe9GZrvcivznIArXF">
+              </form>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->

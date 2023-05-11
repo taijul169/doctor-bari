@@ -1,0 +1,534 @@
+ <!doctype html>
+ <html class="no-js" lang="en">
+ 
+<!-- Mirrored from doctorbari.foysal.xyz/find-ambulance by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 May 2023 06:17:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DoctorBarri.com</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <!--=== Reset Css ===-->
+  <link rel="stylesheet" href="visitor/css/normalize.css">
+  <!--=== Animate ===-->
+  <link rel="stylesheet" href="visitor/css/plugin/animate.css">
+  <!--=== Hover Animation ===-->
+  <link rel="stylesheet" href="visitor/css/plugin/hover-min.css">
+  <!--=== Mean Menu ===-->
+  <link rel="stylesheet" href="visitor/css/plugin/meanmenu.css">
+  <!--=== Bootstrap ===-->
+  <link rel="stylesheet" href="visitor/css/bootstrap.min.css">
+  <!--=== Fontawesome icon ===-->
+  <link rel="stylesheet" href="visitor/css/font-awesome.min.css">
+  <!--=== Fontawesome icon ===-->
+  <link rel="stylesheet" href="visitor/css/flaticon.css">
+  <!--=== nivo slider ===-->
+  <link rel="stylesheet" href="visitor/css/plugin/nivo-slider.css">
+  <link rel="stylesheet" href="visitor/css/plugin/preview.css" media="screen">
+  <!-- ====carousel======= -->
+  <!-- <link rel="stylesheet" href="assets/css/carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/carousel/owl.theme.default.min.css"> -->
+  <!--=== Owl carousel ===-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,500,500i,700,700i,900,900i" rel="stylesheet">
+
+  <link rel="stylesheet" href="admin/lib/select2/dist/css/select2.min.css">
+
+  <link rel="stylesheet" href="visitor/css/icofont.css">
+
+  <link rel="stylesheet" href="visitor/css/plugin/owl.carousel.min.css">
+  <!--=== Magnific PopUp ===-->
+  <link rel="stylesheet" href="visitor/css/plugin/magnific-popup.css">
+  <!--=== Main Css ===-->
+  <link rel="stylesheet" href="visitor/css/style.css">
+  <!--=== sass Css ===-->
+<!--   <link rel="stylesheet" href=" http://doctorbari.foysal.xyz/visitor/scss/main.css "> -->
+  <!--=== Responsive Css ===-->
+  <link rel="stylesheet" href="visitor/css/responsive.css">
+  <script src="visitor/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <meta name="csrf-token" content="e8NdWSkpmj25fAzspvTVwPO6cVDx5d8rGNpgPm3m" />
+<style>
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 35px;
+  }
+</style>
+</head>
+<body  onload ="getLocation()" >
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <!--===============================================================================-->
+
+            <!--====== Header Start ======-->
+            <header>
+             <div class="header-top-area clear-fix pt-20 pb-20">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-3">
+                     <div class="social-icon-area">
+                      <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                   <div class="top-midle">
+                     <li><span>Call Now</span><a href="#">+88 01682786501</a></li>
+                     <li><span>E-mail</span><a href="#">foysal5918@gmail.com</a></li>
+                   </div>
+                 </div>
+                 <div class="col-md-3">
+                                        <div class="dropdown">
+                        <a href="#" class="dropdown-toggle btn btn-info" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Login/Register <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="donor/login.html">Donor Login/Register</a></li>
+                          <li><a href="dashboard/login.html">Admin Login</a></li>
+                        </ul>
+                      </div>
+                                       </div>
+               </div>
+             </div>
+           </div>
+           <div class="header-area pt-10 pb-10">
+             <div class="container clear-fix">
+               <div class="row">
+                 <div class="col-md-2">
+                   <div class="logo-area">
+                    <h1>DoctorBari</h1>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                 <div class="header-right">
+                   <nav>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="find-ambulance.html">Find Ambulence</a>
+                    </li>
+                    <li><a href="#">Blood</a>
+                     <ul class="submenu">
+                        <li  class="smooth-menu"><a href="find-donor.html">Find Donor</a></li>
+                        <li  class="smooth-menu"><a href="donor/register.html">Be a Donor</a></li>
+                      </ul>
+                    </li>
+                     <li><a href="find-hospital.html">Hospitals</a></li>
+                     <li>
+                      <a href="find-doc.html">Doctors</a>
+                    </li>
+
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="about.html">About us</a></li>
+
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-1">
+             <div class="header-m-right">
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </header>
+ <!-- Doctor Search area start -->
+ <!-- slider area-->
+
+         <!-- Doctor Search area start -->
+ <section id="sectionbg" class="ambu">
+
+   <h1>I'm looking for a ambulence</h1>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+           <form class="form-inline text-center" method="get" action="http://doctorbari.foysal.xyz/find-ambulance" enctype="multipart/form-data">
+            <label class="sr-only" for="inlineFormInputName2">City</label>
+            <!-- <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter City"> -->
+             <div class="form-group">
+              <label for="user">Select City:</label>
+              <select class="form-control select2" id="district" name="district" id="mySelect">
+                <option selected disabled>Choose district</option>
+                <option value="Barguna">Barguna</option>
+                <option value="Barisal">Barisal</option>
+                <option value="Bhola">Bhola</option>
+                <option value="Jhalokati">Jhalokati</option>
+                <option value="Patuakhali">Patuakhali</option>
+                <option value="Pirojpur">Pirojpur</option>
+                <option value="Bandarban">Bandarban</option>
+                <option value="Brahmanbaria">Brahmanbaria</option>
+                <option value="Chandpur">Chandpur</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Comilla">Comilla</option>
+                <option value="Coxs-bazar">Cox's Bazar</option>
+                <option value="Feni">Feni</option>
+                <option value="Khagrachhari">Khagrachhari</option>
+                <option value="Lakshmipur">Lakshmipur</option>
+                <option value="Noakhali">Noakhali</option>
+                <option value="Rangamati">Rangamati</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Faridpur">Faridpur</option>
+                <option value="Gazipur">Gazipur</option>
+                <option value="Gopalganj">Gopalganj</option>
+                <option value="Kishoreganj">Kishoreganj</option>
+                <option value="Madaripur">Madaripur</option>
+                <option value="Manikganj">Manikganj</option>
+                <option value="Munshiganj">Munshiganj</option>
+                <option value="Narayanganj">Narayanganj</option>
+                <option value="Narsingdi">Narsingdi</option>
+                <option value="Rajbari">Rajbari</option>
+                <option value="Shariatpur">Shariatpur</option>
+                <option value="Tangail">Tangail</option>
+                <option value="Bagerhat">Bagerhat</option>
+                <option value="Chuadanga">Chuadanga</option>
+                <option value="Jessore">Jessore</option>
+                <option value="Jhenaidah">Jhenaidah</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Kushtia">Kushtia</option>
+                <option value="Magura">Magura</option>
+                <option value="Meherpur">Meherpur</option>
+                <option value="Narail">Narail</option>
+                <option value="Satkhira">Satkhira</option>
+                <option value="Jamalpur">Jamalpur</option>
+                <option value="Mymensingh">Mymensingh</option>
+                <option value="Netrakona">Netrakona</option>
+                <option value="Sherpur">Sherpur</option>
+                <option value="Bogra">Bogra</option>
+                <option value="Chapainawabganj">Chapainawabganj</option>
+                <option value="Joypurhat">Joypurhat</option>
+                <option value="Naogaon">Naogaon</option>
+                <option value="Natore">Natore</option>
+                <option value="Pabna">Pabna</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Sirajganj">Sirajganj</option>
+                <option value="Dinajpur">Dinajpur</option>
+                <option value="Gaibandha">Gaibandha</option>
+                <option value="Kurigram">Kurigram</option>
+                <option value="Lalmonirhat">Lalmonirhat</option>
+                <option value="Nilphamari">Nilphamari</option>
+                <option value="Panchagarh">Panchagarh</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Thakurgaon">Thakurgaon</option>
+                <option value="Habiganj">Habiganj</option>
+                <option value="Moulvibazar">Moulvibazar</option>
+                <option value="Sunamganj">Sunamganj</option>
+                <option value="Sylhet">Sylhet</option>
+                </select>
+              </div>
+
+          <div class="form-group">
+            <select class="form-control" id="sel1" value="" name="type" required>
+              <option selected disabled>Choose Ambulance type</option>
+              <option value="Icu Ambulance">Icu Ambulance</option>
+              <option value="Frezzing Ambulance">Frezzing Ambulance</option>
+              <option value="Ac Ambulance">Ac Ambulance</option>
+              <option value="Normal Ambulance">Normal Ambulance</option>
+            </select>
+          </div>
+            <button type="submit" class="btn btn-primary mb-2">Search</button>
+          </form>
+
+          
+         </div>
+       </div>
+     </div>
+   </div>
+
+ </section>
+ <!-- doctor list start -->
+ 
+    <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="doctor-slide-area">
+           <h3>You also can choose ambulence form below</h3>
+           <!-- Hospital-list start-->
+            <div class="hospital-area-list pt-40 pb-80">
+             <div class="container">
+               <div class="row">
+                <div class="hospital-slider">
+                                      <div class="single-hospital text-center">
+                   <div class="h-hospital-content-top">
+                    <img src="image/dmc-203-2019-04-225cbde80baf571.png" alt="">
+                   </div>
+                   <div class="h-hospital-content-bottom">
+                    
+                    <h2>DMC - 203</h2>
+                    <p>asd sdfsdfsdf</p>
+                    <p>Phone: 1521450823</p>
+                    <span>Ac Ambulance</span><br>
+                      <a  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"  
+                            data-ambid="16" >
+                        Book</a>
+
+                   </div>
+                 </div>
+                                    <div class="single-hospital text-center">
+                   <div class="h-hospital-content-top">
+                    <img src="image/un-am-201-2019-04-225cbd3ed086b5f.html" alt="">
+                   </div>
+                   <div class="h-hospital-content-bottom">
+                    
+                    <h2>UN-Am-201</h2>
+                    <p>asdf sdfsdf</p>
+                    <p>Phone: 1521450823</p>
+                    <span>Frezzing Ambulance</span><br>
+                      <a  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"  
+                            data-ambid="15" >
+                        Book</a>
+
+                   </div>
+                 </div>
+                                    <div class="single-hospital text-center">
+                   <div class="h-hospital-content-top">
+                    <img src="image/ananda-101-2019-04-195cba5d58bb81d.png" alt="">
+                   </div>
+                   <div class="h-hospital-content-bottom">
+                    
+                    <h2>Ananda 101</h2>
+                    <p>asdfsd</p>
+                    <p>Phone: 1521450823</p>
+                    <span>Icu Ambulance</span><br>
+                      <a  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"  
+                            data-ambid="14" >
+                        Book</a>
+
+                   </div>
+                 </div>
+                                    <div class="single-hospital text-center">
+                   <div class="h-hospital-content-top">
+                    <img src="image/dmc-100-2019-04-195cba1a1523d3c.png" alt="">
+                   </div>
+                   <div class="h-hospital-content-bottom">
+                    
+                    <h2>DMC-100</h2>
+                    <p></p>
+                    <p>Phone: 1521450823</p>
+                    <span>Icu Ambulance</span><br>
+                      <a  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"  
+                            data-ambid="13" >
+                        Book</a>
+
+                   </div>
+                 </div>
+                                    <div class="single-hospital text-center">
+                   <div class="h-hospital-content-top">
+                    <img src="image/un-amb-101-2019-04-195cb9f5e537407.png" alt="">
+                   </div>
+                   <div class="h-hospital-content-bottom">
+                    
+                    <h2>UN-AMB-101</h2>
+                    <p>sdf</p>
+                    <p>Phone: 1521450823</p>
+                    <span>Icu Ambulance</span><br>
+                      <a  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"  
+                            data-ambid="12" >
+                        Book</a>
+
+                   </div>
+                 </div>
+                               </div>
+              </div>
+            </div>
+            </div>
+            <!-- Hospital-list end-->
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+ <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Book an Ambulence</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form" action="http://doctorbari.foysal.xyz/book" method="post" id="ambu-book">
+                      <input type="hidden" name="_token" value="e8NdWSkpmj25fAzspvTVwPO6cVDx5d8rGNpgPm3m">
+                      <input type="hidden" id="ambid" name="ambid">
+                        <table>
+                        <tr><td>Mobile No:</td><td><input type="text" name="mobile_no" class="form-control" placeholder="+8801xxxxxxxx"></td></tr>
+                       
+                      </table>
+                   
+                </div>
+                <div class="modal-footer">
+                  <input type="submit" class="btn btn-success" value="Requst for Booking">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                 </form>
+              </div>
+              
+            </div>
+          </div>  
+
+      <div class="footer-area">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-4">
+       <div class="footer-left">
+         <h2>Let’s join & create something together</h2>
+         <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you completed.</p>
+         <label for=""><input type="text" placeholder="Enter Your Email Address"></label>
+         <a href="#">Subscribe us</a>
+       </div>
+     </div>
+          <div class="col-md-4">
+       <div class="footer-midle d-flex">
+         <h2>Usefull Links</h2>
+        <div class="footer-midle-left">
+           <li><a href="#">Ambulance</a></li>
+           <li><a href="#">Doctor</a></li>
+           <li><a href="#">Hospital</a></li>
+           <li><a href="#">Donor</a></li>
+
+        </div>
+        <div class="footer-midle-left">
+              <li><a href="#">Video</a></li>
+             <li><a href="#">Education</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">contact us</a></li>
+
+
+        </div>
+
+       </div>
+     </div>
+          <div class="col-md-4">
+       <div class="footer-right">
+         <h2>For business dealing</h2>
+         <h2>888-000-1234</h2>
+         <h3>Available 9:00 - 7:00 all days</h3>
+         <h3>Big Smart Stareet, 2nd Cross
+            Newyork, USA 1002.</h3>
+          <hr>
+           <h2>For business dealing</h2>
+         <h2>888-000-1234</h2>
+
+       </div>
+     </div>
+   </div>
+
+  </div>
+</div>
+<!--==================================================================-->
+<script type="text/javascript" src="visitor/js/jquery-3.2.0.min.js"></script>
+<script>window.jQuery || document.write('<script src=" http://doctorbari.foysal.xyz/visitor/js/vendor/jquery-1.12.0.min.js "><\/script>')</script>
+<!--=== All Plugin ===-->
+<script type="text/javascript" src="visitor/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="visitor/js/plugin/wow.min.js"></script>
+<!-- <script type="text/javascript" src=" http://doctorbari.foysal.xyz/visitor/js/plugin/jquery.sticky.js "></script> -->
+<script type="text/javascript" src="visitor/js/plugin/jquery.scrolly.js"></script>
+<script type="text/javascript" src="visitor/js/plugin/nivo-slider.js"></script>
+<script type="text/javascript" src="visitor/js/plugin/jquery.meanmenu.min.js"></script>
+<!-- counter-area  start-->
+<script type="text/javascript" src="visitor/js/plugin/jquery.counterup.min.js"></script>
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js')}} "></script> -->
+<!-- counter-area end -->
+<!-- nivo-slider -->
+<script type="text/javascript" src="visitor/js/plugin/home.js"></script>
+<!-- <script type="text/javascript" src="assets/js/carousel/owl.carousel.min.js"></script> -->
+<script type="text/javascript" src="visitor/js/plugin/owl.carousel.min.js"></script>
+<script type="text/javascript" src="visitor/js/plugin/jquery.magnific-popup.min.js"></script>
+
+<script src="admin/lib/select2/dist/js/select2.full.min.js"></script>
+
+<!--=== All Active ===-->
+<script type="text/javascript" src="visitor/js/main.js"></script>
+
+
+<script type="text/javascript">
+  $(function () {
+
+    $('.select2').select2();
+
+  });
+
+
+  $('#myModal').on('show.bs.modal', function (event) {
+          var bookings = $(event.relatedTarget); // Button that triggered the modal
+      
+          var ambid = bookings.data('ambid');
+          // console.log(ambid);
+          // var modal = $(this);
+          // modal.find('.modal-title').text('New message to ' + recipient)
+         $('#ambid').val(ambid);
+
+
+      });
+
+//Ajax search
+
+  // $('#search_key').on('change', function() {
+    
+  //   console.log(this.value);
+
+    // $.ajax({
+    //    headers: {
+    //       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //     },
+
+    //   type: 'post',
+    //   dataType: 'json',
+    //   data: { ambn: $(#ambid).val() },
+    //   success:function(data) {
+
+    //     // $('<tr>').html(
+    //     //             $('td').text(item.rank),
+    //     //             $('td').text(item.content),
+    //     //             $('td').text(item.UID)
+    //     //         ).appendTo('#donor_table');
+
+    //     console.log(data);
+    //   }
+    // });
+
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+ //  $(document).ready(function(){
+ //   $('#menu').slicknav();
+ //   $(".header_area").sticky({topSpacing:0});
+
+ // });
+</script>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+</script>
+
+</body>
+
+<!-- Mirrored from doctorbari.foysal.xyz/find-ambulance by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 May 2023 06:17:12 GMT -->
+</html>

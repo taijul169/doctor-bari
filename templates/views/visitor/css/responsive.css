@@ -1,0 +1,363 @@
+/*******************************
+	All Responsive Code
+*******************************/
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .tab-area .nav-tabs li a {
+	padding: 10px 15px;
+	
+}
+.single-slide {
+	width: 310px;
+}
+.single-price.text-center table tr th {
+	padding: 12px 2px;
+	font-size: 12px;
+}
+
+.single-price.text-center table {
+	margin-left: 8px;
+}
+.single-price.text-center a {
+	
+	margin-left: 15px;
+}
+.social-icon ul li a {
+	
+	width: 45px;
+	height: 45px;	
+	line-height: 45px;	
+	margin: 0px;
+}
+.ap-img {	
+	margin-right: 14px;	
+}
+.top-midle span {
+	padding-right: 6px;
+}
+
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.top-midle li:last-child {
+	 padding-left: 0px; 
+}
+.top-midle li{
+	display: block;
+}
+.logo-area {	
+	 transform: skewX(0deg); 
+}
+.logo-area h1 {
+	transform: skewX(0deg);
+}
+.service-content.text-center h3 {
+	font-size: 20px;
+}
+.heading ul li {	
+	padding: 20px 47px;	
+}
+.single-price.text-center {
+	
+	margin-bottom: 15px;
+}
+.download-btn-area a {
+	margin-left: 237px;
+}
+.app-cotent-left {
+	margin-bottom: 10px;
+}
+.form-box {	
+	padding: 40px 35px;	
+}
+.form-box {
+	width: 501px;
+}
+.footer-area {
+	padding-top: 160px;
+}
+
+.social-icon {
+	margin-left: 170px;
+}
+.single-widget {
+	margin-bottom: 20px;
+}
+.single-widget p {
+	width: 352px;
+	margin-left: 175px;
+}
+}
+
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+}
+ 
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.single-slide {
+	margin-left: 110px;
+}
+.heading ul li {	
+	padding: 20px 28px;
+	font-size: 18px;
+}
+.single-price.text-center {
+	margin-bottom: 15px;
+}
+.single-price.text-center table {
+	margin-left: 78px;
+}
+.single-price.text-center a {
+	margin-left: 120px;
+}
+.download-btn-area a {
+	margin-left: 160px;
+}
+.footer-area {
+	padding-top: 170px;
+}
+.social-icon {
+	margin-left: 70px;
+}
+.single-widget p {
+	width: 350px;
+	margin-left: 90px;
+}
+.single-widget {
+	margin-bottom: 20px;
+}
+.btn-area a {
+	display: initial;
+}
+.btn-area {
+	margin-top: 56px;
+}
+.top-midle li:last-child {
+	 padding-left: 0px; 
+}
+.slider-content.t-cn.s-tb.slider-2 h1 {
+	font-size: 30px;
+}
+.title2 {
+	font-size: 18px;
+}
+.form-box {
+	width: 450px;
+	margin-left: 62px;
+}
+.app-cotent-left {
+	margin-bottom: 10px;
+}
+.logo-area {
+	 transform: skewX(0deg); 
+}
+.logo-area h1 {
+	
+	transform: skewX(0deg);
+}
+ 
+}
+@media only screen and (min-width: 280px) and (max-width: 575px) {
+.section-title.text-center.pb-60 h2 {
+	font-size: 22px;
+	padding-bottom: 12px;
+}
+.social-links {
+	text-align: center;
+}
+.top-midle {
+	text-align: center;
+}
+.sticky {
+	position: relative;
+}
+.video-content.text-center video {
+	max-width: 100%;
+}
+.our-services-area {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.skew-shape {
+	height: 40px;
+}
+.slider-area {
+	padding-bottom: 30px;
+}
+.pb-60 {
+	 padding-bottom: 0px; 
+}
+.about-left #l-btn {
+	padding: 10px 0;
+	width: 220px;
+	margin-left: 10px;
+}
+.content {
+	overflow: hidden;
+}
+.video-content.text-center h2 {
+	padding: 12px;
+	font-size: 22px;
+}
+.video-content.text-center h4 {
+	font-size: 18px;
+}
+.content li {	
+	padding: 3px 0;
+	font-size: 12px;
+}
+.content h2 {
+	padding: 10px 22px;
+	font-size: 14px;
+}
+.section-title.text-center.pb-60 p {	
+	font-size: 15px;	
+}
+.menu-area {
+	display: none;
+}
+.btn-area {
+	margin-top: 25px;
+}
+.btn-area a {
+	display: initial;
+}
+.top-midle li:last-child {
+ padding-left:0px; 
+}
+.logo-area {
+	 transform: skewX(0deg); 
+}
+.logo-area h1 {
+	
+	transform: skewX(0deg);
+}
+.slider-content.t-cn.s-tb.slider-2 h1 {
+	font-size: 22px;
+}
+.single-slide {
+	margin-left: 4px;
+	width: 272px;
+}
+.client-details {
+	float: right;
+	margin-right: 16px;
+	margin-top: 0;
+}
+.owl-carousel .owl-item img {
+	display: block;
+	width: 80%;
+}
+.heading ul li {
+	padding: 20px 2px;
+	font-size: 14px;
+}
+.app-heading.text-center h2 {
+	padding-bottom: 23px;
+	font-size: 22px;
+}
+.single-price.text-center table {
+	margin-left: 8px;
+	font-size: 8px;
+}
+
+.single-price.text-center a {	
+	width: 150px;
+	font-size: 12px;
+}
+.download-btn-area a {	
+	width: 190px;
+	margin-left: 30px;
+	font-size: 10px;
+	padding: 14px 30px;
+}
+.single-price.text-center {
+	margin-bottom: 15px;
+	height: 412px;
+	padding: 10px 0;
+}
+.package-area.pt-60.pb-80 .tab-content {
+	margin-top: 0px;
+}
+.download-btn-area {
+	padding-bottom: 62px;
+
+}
+.single-widget p {
+	width: 255px;
+	margin-left: 0px;
+}
+.app-img-area {
+	padding-top: 86px;
+}
+.single-widget {
+	margin-bottom: 20px;
+}
+.btn-area a {
+	display: initial;
+}
+.footer-area {
+	padding-top: 170px;
+}
+.social-icon ul {
+	margin-left: 28px;
+}
+.social-icon {
+	margin-left: 0px;
+}
+.social-icon ul li a {
+	width: 33px;
+	height: 33px;	
+	line-height: 33px;
+}
+.form-box {
+	width: 100%;
+	margin-left: 0px;
+	padding: 30px 10px;
+}
+.col-md-6.form-box form input[type="submit"] {
+	width: 90%;
+}
+
+
+.preview-2 .nivo-directionNav a.nivo-prevNav::before {	
+	font-size: 16px;	
+	height: 40px;
+	line-height: 40px;		
+	top: 60%;	
+	width: 40px;
+	
+}
+.preview-2 .nivo-directionNav a.nivo-nextNav::before {
+	
+	font-size: 16px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	top: 60%;
+	width: 40px;
+	
+}
+.slider-area .slider-2 h1 {
+	font-size: 16px;
+}
+.slider-area .slider-2 div.title2 {
+	font-size:10px;
+	
+}
+.slider-area .slider-2 div.slider-botton {
+	display: none;
+}
+
+}
