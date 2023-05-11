@@ -56,11 +56,7 @@ else{
 router.get("/dashboard/login",(req,res)=>{
     res.render('dashboard/login')
 })
-//================================================================ DOCTOR BARI END ()==========================================================
 
-
-
-//================================================================== PORTFOLIO PROJECT START=====================================
 
 
 // SIGN IN ROUTE------------------------------
@@ -75,6 +71,150 @@ router.get("/dashboard",(req,res)=>{
 router.get("/dashboard/donor",(req,res)=>{
     res.render("dashboard/donor")
 })
+router.get("/dashboard/user/:id/edit",(req,res)=>{
+    res.render("dashboard/useredit")
+})
+
+router.get("/dashboard/user",(req,res)=>{
+    res.render("dashboard/user")
+})
+
+router.get("/dashboard/role",(req,res)=>{
+    res.render("dashboard/role")
+})
+
+
+router.get("/dashboard/user/create",(req,res)=>{
+    res.render("dashboard/user-create")
+})
+
+router.get("/dashboard/ambulance",(req,res)=>{
+    res.render("dashboard/ambulance")
+})
+
+router.get("/dashboard/ambulance/:id/edit",(req,res)=>{
+    res.render("dashboard/ambulanceedit")
+})
+
+router.get("/dashboard/doctor",(req,res)=>{
+    res.render("dashboard/doctor")
+})
+
+router.get("/dashboard/doctor/:id/edit",(req,res)=>{
+    res.render("dashboard/doctor")
+})
+
+router.get("/dashboard/hospital",(req,res)=>{
+    res.render("dashboard/hospital")
+})
+
+router.get("/dashboard/education",(req,res)=>{
+    res.render("dashboard/education")
+})
+
+router.get("/dashboard/education/create",(req,res)=>{
+    res.render("dashboard/education-create")
+})
+
+router.get("/dashboard/education/profile",(req,res)=>{
+    res.render("dashboard/profile")
+})
+
+
+// front end
+
+router.get("/find-ambulance",(req,res)=>{
+    res.render("find-ambulance")
+})
+
+router.get("/find-doctor",(req,res)=>{
+    res.render("find-doc")
+})
+router.get("/find-hospital",(req,res)=>{
+    res.render("find-hospital")
+})
+router.get("/find-donor",(req,res)=>{
+    res.render("find-donor")
+})
+router.get("/donor/register",(req,res)=>{
+    res.render("register")
+})
+router.get("/education",(req,res)=>{
+    res.render("education")
+})
+router.get("/about",(req,res)=>{
+    res.render("about")
+})
+router.get("/donor/login",(req,res)=>{
+    res.render("donor/login")
+})
+//================================================================ DOCTOR BARI END ()==========================================================
+
+
+
+//================================================================== PORTFOLIO PROJECT START=====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------------------------------SERVICE CRUD-----------------------------------------------
 router.get("/admin/createservice",auth, (req,res)=>{
     res.render("createservice",{userData:req.userData})

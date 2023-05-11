@@ -1,0 +1,454 @@
+{{>header}}
+     <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse " style="">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="#"><img src="/admin/lib/image/user.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Foysal</h5>
+          <p class="text-center">ADMIN</p>
+          <li>
+            <a class=" " href="/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+                    <li class="sub-menu">
+
+            <a href="javascript:;" class="dcjq-parent active ">
+              <i class="fa fa-ambulance"></i>
+              <span>Mnage User/Role</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/user">Manage Users</a></li>
+              <li><a href="/dashboard/role">Roles</a></li>
+
+            </ul>
+          </li>
+          
+                    <li class="sub-menu">
+            <a class=" " href="/dashboard/ambulance">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>Ambulance List</span>
+              </a>
+          </li>
+          
+         
+                  <li class="sub-menu">
+
+            <a class=" "
+            href="/dashboard/doctor"><i class="glyphicon glyphicon-user"></i> Doctor List</a>
+          </li>
+        
+         
+                  <li class="sub-menu">
+             <a class=" " href="/dashboard/hospital"> <i class="fa fa-h-square"></i> Hospital List</a>
+          </li>
+                
+                    <li class="sub-menu">
+            <a class="" href="/dashboard/donor">
+              <i class="glyphicon glyphicon-tint"></i>
+              <span>Blood Donar</span>
+              </a>
+            <!-- <ul class="sub">
+              <li><a href="grids.html">Donar List</a></li>
+            </ul> -->
+          </li>
+          
+          
+                   <li class="sub-menu">
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-youtube-play"></i>
+              <span>Education</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/education/create">Add Video</a></li>
+              <li><a href="/dashboard/education">Video list</a></li>
+            </ul>
+          </li>
+
+        
+                </ul>
+      </br>
+      </br>
+      </br>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+
+    <section id="main-content">
+      <section class="wrapper">
+       
+<div class="row mt">
+      <div class="col-md-12">
+        <div class="content-panel" style="padding: 10px;">
+          <div class="row" style="padding: 10px;" >
+              <div class="col-md-6">
+                  <h4>All Users</h4>
+              </div>
+              <div class="col-md-6">
+                <a href="/dashboard/user/create" class="btn btn-sm btn-info pull-right"><i class="fa fa-plus"></i>Add user</a>
+              </div>
+          </div>
+         <table  id="example1" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th><i class="fa fa-bullhorn"></i> SL#</th>
+                    <th><i class="fa fa-question-circle"></i> User Name</th>
+                    <th><i class="fa fa-bookmark"></i> E-mail</th>
+                    <th><i class="fa fa-bookmark"></i> Role</th>
+                    <th><i class="fa fa-bookmark"></i> Status</th>
+                    <th><i class="fa fa-image"></i> Action</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                                  	                                       <tr>
+                    <td>
+                      <a  href="basic_table.html#">1</a>
+                    </td>
+                    <td  class="hidden-phone">Tipu Sultan</td>
+
+                    <td >tipu@gmail.com </td>
+
+                    <td>
+                       
+                        Admin 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/22/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-22" action="/dashboard/user/22" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-22').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">2</a>
+                    </td>
+                    <td  class="hidden-phone">Anondo Ambulance service</td>
+
+                    <td >ananda@gmail.com </td>
+
+                    <td>
+                       
+                        Ambulance 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/21/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-21" action="/dashboard/user/21" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-21').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">3</a>
+                    </td>
+                    <td  class="hidden-phone">ঢাকা মেডিকেল কলেজ</td>
+
+                    <td >dmc@gmail.com </td>
+
+                    <td>
+                       
+                        Hospital 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/20/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-20" action="/dashboard/user/20" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-20').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">4</a>
+                    </td>
+                    <td  class="hidden-phone">Comilla Medical College &amp; Hospital</td>
+
+                    <td >comillamedical@gmial.com </td>
+
+                    <td>
+                       
+                        Hospital 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/19/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-19" action="/dashboard/user/19" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-19').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">5</a>
+                    </td>
+                    <td  class="hidden-phone">Mukti Hospital</td>
+
+                    <td >mukti@gmail.com </td>
+
+                    <td>
+                       
+                        Hospital 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/18/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-18" action="/dashboard/user/18" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-18').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">6</a>
+                    </td>
+                    <td  class="hidden-phone">Tipu Sultan</td>
+
+                    <td >tipu4142@gmail.com </td>
+
+                    <td>
+                       
+                        Doctor 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/15/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-15" action="/dashboard/user/15" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-15').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">7</a>
+                    </td>
+                    <td  class="hidden-phone">Dr. Azizul Haque</td>
+
+                    <td >aziz_doc@gmail.com </td>
+
+                    <td>
+                       
+                        Doctor 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/13/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-13" action="/dashboard/user/13" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-13').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">8</a>
+                    </td>
+                    <td  class="hidden-phone">United Hospital</td>
+
+                    <td >hospital@gmail.com </td>
+
+                    <td>
+                       
+                        Hospital 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/12/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-12" action="/dashboard/user/12" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-12').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                                                        <tr>
+                    <td>
+                      <a  href="basic_table.html#">9</a>
+                    </td>
+                    <td  class="hidden-phone">Dr. Shohan Ahmed</td>
+
+                    <td >doctor@gmail.com </td>
+
+                    <td>
+                       
+                        Doctor 
+                                           </td>
+                    <td  class="hidden-phone"><span class='label label-success'>Active</span></td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="/dashboard/user/3/edit"><i class="fa fa-edit "></i></a>
+
+                    <!-- <form id="delete-form-3" action="/dashboard/user/3" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                        <input type="hidden" name="_method" value="DELETE">
+                    </form>
+                    <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                        event.preventDefault();
+                        document.getElementById('delete-form-3').submit();
+                    }else {
+                        event.preventDefault();
+                            }"><i class="fa fa-trash-o"></i>
+                    </button> -->
+                    
+                    </td>
+                  </tr>
+                            
+            </tbody>
+        </div>
+        <!-- /content-panel -->
+      </div>
+      <!-- /col-md-12 -->
+     </div>
+      </section>
+    </section>
+    <!--main content end-->
+
+{{>footer}}
+
+
+  <script type="text/javascript">
+  $(function () {
+    //$('#example1').DataTable();
+    $('#example1').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  });
+</script>
+
+  <script type="application/javascript">
+    $(document).ready(function() {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function(e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>

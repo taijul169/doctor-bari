@@ -1,4 +1,5 @@
 {{>header}}
+  <!--header end-->
     <!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
@@ -7,7 +8,7 @@
       <div id="sidebar" class="nav-collapse " style="">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="#"><img src="/admin/lib/image/user.png" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="#"><img src="/image/user.png" class="img-circle" width="80"></a></p>
           <h5 class="centered"> Foysal</h5>
           <p class="text-center">ADMIN</p>
           <li>
@@ -50,7 +51,7 @@
           </li>
                 
                     <li class="sub-menu">
-            <a class="active" href="/dashboard/donor">
+            <a class="" href="/dashboard/donor">
               <i class="glyphicon glyphicon-tint"></i>
               <span>Blood Donar</span>
               </a>
@@ -61,7 +62,7 @@
           
           
                    <li class="sub-menu">
-            <a href="javascript:;" class=" ">
+            <a href="javascript:;" class="dcjq-parent active ">
               <i class="fa fa-youtube-play"></i>
               <span>Education</span>
               </a>
@@ -86,49 +87,42 @@
     <!--main content start-->
 
     <section id="main-content">
-    <section class="wrapper">
+      <section class="wrapper">
        
-
-    <div class="row mt">
+<div class="row mt">
       <div class="col-md-12">
         <div class="content-panel" style="padding: 10px;">
           <div class="row" style="padding: 10px;" >
               <div class="col-md-6">
-                  <h4>All Registered Donor</h4>
+                  <h4>All Educational Video list</h4>
+              </div>
+              <div class="col-md-6">
+                <a href="/dashboard/education/create" class="btn btn-sm btn-info pull-right"><i class="fa fa-plus"></i>Add video</a>
               </div>
           </div>
          <table  id="example1" class="table table-bordered table-hover">
                 <thead>
                   <tr>
                     <th><i class="fa fa-bullhorn"></i> SL#</th>
-                    <th>Name</th>
-                    <th>E-mail</th>
-                    <th>DOB</th>
-                    <th>District</th>
-                    <th>Last donation</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Action</th>
+                    <th><i class="fa fa-question-circle"></i> Video Name</th>
+                    <th><i class="fa fa-bookmark"></i> Links</th>
+                    <th><i class="fa fa-image"></i> Action</th>
                   </tr>
                 </thead>
                 
                 <tbody>
-                    <tr>
+                                                                           <tr>
                     <td>
-                      1
+                      <a  href="basic_table.html#">1</a>
                     </td>
-                    <td>Foysal</td>
-                    <td >donor@gmail.com</td>
-                    <td>1990-01-17</td>
-                    <td>Dhaka</td>
-                    <td>2022-01-19</td>
-                    <td>01682786501</td>
-                    <td>shashongacha comilla</td>
-                    <td>
-                      <a class="btn btn-info btn-sm" href="/dashboard/donor/3/edit"><i class="fa fa-edit "></i></a>
+                    <td  class="hidden-phone">test  name 3</td>
 
-                    <form id="delete-form-3" action="/dashboard/donor/3" style="display: none;" method="POST">
-                        <input type="hidden" name="_token" value="NLPGwxSJWbeqpMyr9ueWmd9Qe9GZrvcivznIArXF">
+                    <td class="edu_vid" ><iframe width="540" height="315" src="https://www.youtube.com/embed/ykMmO9aaYPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="http://doctorbari.foysal.xyz/dashboard/education/3/edit"><i class="fa fa-edit "></i></a>
+
+                    <form id="delete-form-3" action="http://doctorbari.foysal.xyz/dashboard/education/3" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
                         <input type="hidden" name="_method" value="DELETE">
                     </form>
                     <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
@@ -143,20 +137,16 @@
                   </tr>
                                                         <tr>
                     <td>
-                      2
+                      <a  href="basic_table.html#">2</a>
                     </td>
-                    <td>Niamul Haque</td>
-                    <td >niam@gmail.com</td>
-                    <td>2019-01-18</td>
-                    <td>Rangamati</td>
-                    <td>2019-02-04</td>
-                    <td>01721450823</td>
-                    <td>Dhanmondi 27, Dhaka - 1205</td>
-                    <td>
-                      <a class="btn btn-info btn-sm" href="/dashboard/donor/2/edit"><i class="fa fa-edit "></i></a>
+                    <td  class="hidden-phone">test  name 2</td>
 
-                    <form id="delete-form-2" action="/dashboard/donor/2" style="display: none;" method="POST">
-                        <input type="hidden" name="_token" value="NLPGwxSJWbeqpMyr9ueWmd9Qe9GZrvcivznIArXF">
+                    <td class="edu_vid" ><iframe width="540" height="315" src="https://www.youtube.com/embed/kskWZSRAoeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="http://doctorbari.foysal.xyz/dashboard/education/2/edit"><i class="fa fa-edit "></i></a>
+
+                    <form id="delete-form-2" action="http://doctorbari.foysal.xyz/dashboard/education/2" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
                         <input type="hidden" name="_method" value="DELETE">
                     </form>
                     <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
@@ -171,20 +161,16 @@
                   </tr>
                                                         <tr>
                     <td>
-                      3
+                      <a  href="basic_table.html#">3</a>
                     </td>
-                    <td>Foysal Ahmed</td>
-                    <td >foysal@gmail.com</td>
-                    <td>1995-10-28</td>
-                    <td>Dhaka</td>
-                    <td>2019-03-21</td>
-                    <td>01521450823</td>
-                    <td>Sector # 10 , Uttara, Bangladesh</td>
-                    <td>
-                      <a class="btn btn-info btn-sm" href="/dashboard/donor/1/edit"><i class="fa fa-edit "></i></a>
+                    <td  class="hidden-phone">video name</td>
 
-                    <form id="delete-form-1" action="/dashboard/donor/1" style="display: none;" method="POST">
-                        <input type="hidden" name="_token" value="NLPGwxSJWbeqpMyr9ueWmd9Qe9GZrvcivznIArXF">
+                    <td class="edu_vid" ><iframe width="540" height="315" src="https://www.youtube.com/embed/CDgJf5ztpnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+                    <td>
+                      <a class="btn btn-info btn-sm" href="http://doctorbari.foysal.xyz/dashboard/education/1/edit"><i class="fa fa-edit "></i></a>
+
+                    <form id="delete-form-1" action="http://doctorbari.foysal.xyz/dashboard/education/1" style="display: none;" method="POST">
+                        <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
                         <input type="hidden" name="_method" value="DELETE">
                     </form>
                     <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
@@ -203,11 +189,10 @@
         <!-- /content-panel -->
       </div>
       <!-- /col-md-12 -->
-    </div>
-    </section>
+      </div>
+      </section>
     </section>
     <!--main content end-->
-
 {{>footer}}
 
 

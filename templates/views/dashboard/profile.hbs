@@ -1,5 +1,5 @@
 {{>header}}
-    <!--header end-->
+  <!--header end-->
     <!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
@@ -12,13 +12,14 @@
           <h5 class="centered"> Foysal</h5>
           <p class="text-center">ADMIN</p>
           <li>
-            <a class="active " href="/dashboard">
+            <a class=" " href="/dashboard">
               <i class="fa fa-dashboard"></i>
               <span>Dashboard</span>
               </a>
           </li>
 
-         <li class="sub-menu">
+                    <li class="sub-menu">
+
             <a href="javascript:;" class=" ">
               <i class="fa fa-ambulance"></i>
               <span>Mnage User/Role</span>
@@ -30,13 +31,15 @@
             </ul>
           </li>
           
-        <li class="sub-menu">
+                    <li class="sub-menu">
             <a class=" " href="/dashboard/ambulance">
               <i class="glyphicon glyphicon-adjust"></i>
               <span>Ambulance List</span>
               </a>
           </li>
-         <li class="sub-menu">
+          
+         
+                  <li class="sub-menu">
 
             <a class=" "
             href="/dashboard/doctor"><i class="glyphicon glyphicon-user"></i> Doctor List</a>
@@ -85,58 +88,113 @@
 
     <section id="main-content">
       <section class="wrapper">
-       <!--  -->
-      <section class="wrapper">
-        
-          <!-- /col-md-4 -->
-        <div class="row">
-          <div class="col-md-3 col-sm-3 mb">
-            <div class="green-panel pn">
-              <div class="green-header">
-                <h5>Total Doctor</h5>
-              </div>
-              <canvas id="serverstatus03" height="20" width="120"></canvas>
-              
-              <h3>3 Doctors</h3>
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-sm-3 mb">
-            <div class="green-panel pn">
-              <div class="green-header">
-                <h5>Total Hospital</h5>
-              </div>
-              <canvas id="serverstatus03" height="20" width="120"></canvas>
-              
-              <h3>4 hospitals</h3>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 mb">
-            <div class="green-panel pn">
-              <div class="green-header">
-                <h5>Total Ambulance</h5>
-              </div>
-              <canvas id="serverstatus03" height="20" width="120"></canvas>
-              <h3>7 Ambulances</h3>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 mb">
-            <div class="green-panel pn">
-              <div class="green-header">
-                <h5>Total Blood Donor</h5>
-              </div>
-              <canvas id="serverstatus03" height="20" width="120"></canvas>
-              
-              <h3>3 Donors</h3>
-            </div>
-        </div>
+       
+        <div class="row mt">
+          <!--  DATE PICKERS -->
+          <div class="col-lg-12">
+            <div class="form-panel">
 
-        </div>
-              
-        
+              <div class="row">
+	              <div class="col-md-6"><h4>Profile</h4></div>
+			  </div>
+			   <hr>
+              <div class="row">
+    
+	 	 		<form method="post" action="/dashboard/profile" enctype="multipart/form-data">
+	        	<input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+	        	
+			    <div class="col-md-6">
+					 <div class="form-group">
+						  <label for="name">Name:</label>
+						  <input type="text" class="form-control" id="name" value="Abul Kalam" name="name">
+						  					</div>
 
-      </section>
+				     <div class="form-group">
+						  <label for="usr">E-mail:</label>
+						  <input type="email" class="form-control" id="usr" value="admin@gmail.com" name="email" disabled>
+						  					</div>
+			    </div>
+				<div class="col-md-6">
+					 <div class="form-group">
+						  <label for="pass">Password:</label>
+						  <input type="password" class="form-control" id="pass"  name="password" placeholder="password"><br>
+						  <label for="pass" class="badge badge-danger">Leave this password field blank you not want to change the password</label>
+						  					</div>
+					
+				</div>
+				<hr>
+				<div class="col-md-12">
+					 <div class="form-group">
+						  <button type="submit" class="btn btn-success">Update</button>
+						  <button type="reset" class="btn btn-primary">Reset</button>
+					</div>
+				</div>
+			 </form>
+			</div>
+		</div>
+	</div>
+</div>
       </section>
     </section>
     <!--main content end-->
+
+
 {{>footer}}
+
+
+  <script type="text/javascript">
+  $(function () {
+    //$('#example1').DataTable();
+    $('#example1').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  });
+</script>
+
+  <script type="application/javascript">
+    $(document).ready(function() {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function(e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>

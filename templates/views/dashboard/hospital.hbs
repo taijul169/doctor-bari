@@ -1,0 +1,290 @@
+{{>header}}
+  <!--header end-->
+   <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse " style="">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="#"><img src="/admin/lib/image/user.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Foysal</h5>
+          <p class="text-center">ADMIN</p>
+          <li>
+            <a class=" " href="/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+                    <li class="sub-menu">
+
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-ambulance"></i>
+              <span>Mnage User/Role</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/user">Manage Users</a></li>
+              <li><a href="/dashboard/role">Roles</a></li>
+
+            </ul>
+          </li>
+          
+                    <li class="sub-menu">
+            <a class=" " href="/dashboard/ambulance">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>Ambulance List</span>
+              </a>
+          </li>
+          
+         
+                  <li class="sub-menu">
+
+            <a class=" "
+            href="/dashboard/doctor"><i class="glyphicon glyphicon-user"></i> Doctor List</a>
+          </li>
+        
+         
+                  <li class="sub-menu">
+             <a class="active " href="/dashboard/hospital"> <i class="fa fa-h-square"></i> Hospital List</a>
+          </li>
+                
+                    <li class="sub-menu">
+            <a class="" href="/dashboard/donor">
+              <i class="glyphicon glyphicon-tint"></i>
+              <span>Blood Donar</span>
+              </a>
+            <!-- <ul class="sub">
+              <li><a href="grids.html">Donar List</a></li>
+            </ul> -->
+          </li>
+          
+          
+                   <li class="sub-menu">
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-youtube-play"></i>
+              <span>Education</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/education/create">Add Video</a></li>
+              <li><a href="/dashboard/education">Video list</a></li>
+            </ul>
+          </li>
+
+        
+                </ul>
+      </br>
+      </br>
+      </br>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+
+    <section id="main-content">
+      <section class="wrapper">
+       
+    <div class="row mt">
+      <div class="col-md-12">
+        <div class="content-panel" style="padding: 10px;">
+          <div class="row" style="padding: 10px;" >
+              <div class="col-md-6">
+                  <h4>All Hospital</h4>
+              </div>
+              <div class="col-md-6">
+                <a href="/dashboard/user/create" class="btn btn-sm btn-info pull-right"><i class="fa fa-plus"></i> Add hospital admin</a>
+              </div>
+          </div>
+        
+         <table  id="example1" class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>SL#</th>
+
+                <th>Admin Name</th>
+                <th>Admin E-mail</th>
+                <th>Hospital Name</th>
+                <th>Phone</th>
+                <th>Hospital E-mail</th>
+                <th>Address</th>
+                <th>Image</th>
+                <th>Action</th>
+              </tr>
+            </thead>        
+            <tbody>
+                                             <tr>
+                <td>1</td>
+                <td>United Hospital</td>
+                <td>hospital@gmail.com</td>
+                <td>United Hospital</td>
+                <td>1521450823</td>
+                <td>tipu4142@gmail.com</td>
+                <td>Plot 15 Rd No 71, Dhaka 1212 ,Bangladesh</td>
+                <td><img style="width: 90px;height: 60px;" src="/image/united-2019-03-265c9a3db7028bd.jpg" alt=""></td>
+                <td>
+                  <a class="btn btn-info btn-sm" href="/dashboard/hospital/12/edit"><i class="fa fa-edit "></i></a>
+                  <form id="delete-form-12" action="/dashboard/hospital/12" style="display: none;" method="POST">
+                      <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                      <input type="hidden" name="_method" value="DELETE">
+                  </form>
+                  <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                      event.preventDefault();
+                      document.getElementById('delete-form-12').submit();
+                  }else {
+                      event.preventDefault();
+                          }"><i class="fa fa-trash-o"></i>
+                  </button>
+
+                </td>
+              </tr>
+                           <tr>
+                <td>2</td>
+                <td>Mukti Hospital</td>
+                <td>mukti@gmail.com</td>
+                <td>Mukti Hospital</td>
+                <td>1521450823</td>
+                <td>mukti_hospital@gmail.com</td>
+                <td>Mukti Hospital, Sashongacha, Comilla.</td>
+                <td><img style="width: 90px;height: 60px;" src="/image/tipu-2019-04-195cb945f495888.jpg" alt=""></td>
+                <td>
+                  <a class="btn btn-info btn-sm" href="/dashboard/hospital/18/edit"><i class="fa fa-edit "></i></a>
+                  <form id="delete-form-18" action="/dashboard/hospital/18" style="display: none;" method="POST">
+                      <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                      <input type="hidden" name="_method" value="DELETE">
+                  </form>
+                  <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                      event.preventDefault();
+                      document.getElementById('delete-form-18').submit();
+                  }else {
+                      event.preventDefault();
+                          }"><i class="fa fa-trash-o"></i>
+                  </button>
+
+                </td>
+              </tr>
+                           <tr>
+                <td>3</td>
+                <td>Comilla Medical College &amp; Hospital</td>
+                <td>comillamedical@gmial.com</td>
+                <td>Comilla Medical College &amp; Hospital</td>
+                <td>1521450823</td>
+                <td>comillamedical@gmail.com</td>
+                <td>Sector # 10 , Uttara
+Bangladesh</td>
+                <td><img style="width: 90px;height: 60px;" src="/image/comilla-2019-04-195cb9d111f1f95.jpg" alt=""></td>
+                <td>
+                  <a class="btn btn-info btn-sm" href="/dashboard/hospital/19/edit"><i class="fa fa-edit "></i></a>
+                  <form id="delete-form-19" action="/dashboard/hospital/19" style="display: none;" method="POST">
+                      <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                      <input type="hidden" name="_method" value="DELETE">
+                  </form>
+                  <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                      event.preventDefault();
+                      document.getElementById('delete-form-19').submit();
+                  }else {
+                      event.preventDefault();
+                          }"><i class="fa fa-trash-o"></i>
+                  </button>
+
+                </td>
+              </tr>
+                           <tr>
+                <td>4</td>
+                <td>ঢাকা মেডিকেল কলেজ</td>
+                <td>dmc@gmail.com</td>
+                <td>ঢাকা মেডিকেল কলেজ</td>
+                <td>1521450823</td>
+                <td>dmc@gmail.com</td>
+                <td>new market, Dhaka</td>
+                <td><img style="width: 90px;height: 60px;" src="/image/-2019-04-195cb9cf9fb64dc.jpg" alt=""></td>
+                <td>
+                  <a class="btn btn-info btn-sm" href="/dashboard/hospital/20/edit"><i class="fa fa-edit "></i></a>
+                  <form id="delete-form-20" action="/dashboard/hospital/20" style="display: none;" method="POST">
+                      <input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+                      <input type="hidden" name="_method" value="DELETE">
+                  </form>
+                  <button type="button" class="btn btn-danger btn-sm" title="Delete" onclick="if(confirm('Are you sure? You want to delete this?')){
+                      event.preventDefault();
+                      document.getElementById('delete-form-20').submit();
+                  }else {
+                      event.preventDefault();
+                          }"><i class="fa fa-trash-o"></i>
+                  </button>
+
+                </td>
+              </tr>
+                                      </tbody>
+          </table>
+        </div>
+        <!-- /content-panel -->
+      </div>
+      <!-- /col-md-12 -->
+    </div>
+      </section>
+    </section>
+    <!--main content end-->
+
+{{>footer}}
+
+
+  <script type="text/javascript">
+  $(function () {
+    //$('#example1').DataTable();
+    $('#example1').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  });
+</script>
+
+  <script type="application/javascript">
+    $(document).ready(function() {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function(e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>

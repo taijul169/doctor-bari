@@ -1,0 +1,226 @@
+{{>header}}
+      <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse " style="">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="#"><img src="/admin/lib/image/user.png" class="img-circle" width="80"></a></p>
+          <h5 class="centered"> Foysal</h5>
+          <p class="text-center">ADMIN</p>
+          <li>
+            <a class=" " href="/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+                    <li class="sub-menu">
+
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-ambulance"></i>
+              <span>Mnage User/Role</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/user">Manage Users</a></li>
+              <li><a href="/dashboard/role">Roles</a></li>
+
+            </ul>
+          </li>
+          
+                    <li class="sub-menu">
+            <a class=" " href="/dashboard/ambulance">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>Ambulance List</span>
+              </a>
+          </li>
+          
+         
+                  <li class="sub-menu">
+
+            <a class=" "
+            href="/dashboard/doctor"><i class="glyphicon glyphicon-user"></i> Doctor List</a>
+          </li>
+        
+         
+                  <li class="sub-menu">
+             <a class=" " href="/dashboard/hospital"> <i class="fa fa-h-square"></i> Hospital List</a>
+          </li>
+                
+                    <li class="sub-menu">
+            <a class="" href="/dashboard/donor">
+              <i class="glyphicon glyphicon-tint"></i>
+              <span>Blood Donar</span>
+              </a>
+            <!-- <ul class="sub">
+              <li><a href="grids.html">Donar List</a></li>
+            </ul> -->
+          </li>
+          
+          
+                   <li class="sub-menu">
+            <a href="javascript:;" class=" ">
+              <i class="fa fa-youtube-play"></i>
+              <span>Education</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/dashboard/education/create">Add Video</a></li>
+              <li><a href="/dashboard/education">Video list</a></li>
+            </ul>
+          </li>
+
+        
+                </ul>
+      </br>
+      </br>
+      </br>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+
+    <section id="main-content">
+      <section class="wrapper">
+       
+        <div class="row mt">
+          <!--  DATE PICKERS -->
+          <div class="col-lg-12">
+            <div class="form-panel">
+
+              <div class="row">
+	              <div class="col-md-6"><h4>Update user</h4></div>
+	              <div class="col-md-6">
+	              	<a class="btn btn-success pull-right" href="/dashboard/user"><i class="fa fa-list"></i> User List</a>
+	              </div>
+			  </div>
+			   <hr>
+              <div class="row">
+    
+	 	 		<form method="post" action="/dashboard/user/22" enctype="multipart/form-data">
+	        	
+	        	<input type="hidden" name="_method" value="PUT">
+	        	<input type="hidden" name="_token" value="wwaBiDwm0sgDdoaKEkcMU61HjEU8EoTjW8EJG41P">
+	        	
+			    <div class="col-md-6">
+					 <div class="form-group">
+						  <label for="name">Name:</label>
+						  <input type="text" class="form-control" id="name" value="Tipu Sultan" name="name">
+						  					</div>
+
+				     <div class="form-group">
+						  <label for="usr">E-mail:</label>
+						  <input type="email" class="form-control" id="usr" value="tipu@gmail.com" name="email" readonly>
+						  					</div>
+			    </div>
+				<div class="col-md-6">
+					 <div class="form-group">
+						  <label for="pass">Password:</label>
+						  <input type="text" class="form-control" id="pass" value="123" name="password">
+						  					</div>
+
+					 <div class="form-group">
+						  <label for="roles">Select Role:</label>
+						  <select name="role" id="roles" class="form-control" required>
+                            <option disabled selected>Choose role</option>
+                                                             <option value="1"
+                                	 
+									selected
+									                                	>admin</option>
+                                                             <option value="2"
+                                	                                	>doctor</option>
+                                                             <option value="3"
+                                	                                	>hospital</option>
+                                                             <option value="4"
+                                	                                	>ambulance</option>
+                                                         
+                        </select>
+					</div>
+
+					 <div class="form-group">
+						  <label for="status">Active/Deactive user:</label>
+						  <select name="status" id="roles" class="form-control" required>
+                            <option value="1" selected>Activate</option>
+                            <option value="0" >Deactivate</option>
+                        </select>
+					</div>
+				</div>
+				<hr>
+				<div class="col-md-12">
+					 <div class="form-group">
+						  <button type="submit" class="btn btn-success">Update</button>
+					</div>
+				</div>
+			 </form>
+			</div>
+		</div>
+	</div>
+</div>
+      </section>
+    </section>
+    <!--main content end-->
+
+{{>footer}}
+
+
+  <script type="text/javascript">
+  $(function () {
+    //$('#example1').DataTable();
+    $('#example1').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  });
+</script>
+
+  <script type="application/javascript">
+    $(document).ready(function() {
+      $("#date-popover").popover({
+        html: true,
+        trigger: "manual"
+      });
+      $("#date-popover").hide();
+      $("#date-popover").click(function(e) {
+        $(this).hide();
+      });
+
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+        legend: [{
+            type: "text",
+            label: "Special event",
+            badge: "00"
+          },
+          {
+            type: "block",
+            label: "Regular event",
+          }
+        ]
+      });
+    });
+
+    function myNavFunction(id) {
+      $("#date-popover").hide();
+      var nav = $("#" + id).data("navigation");
+      var to = $("#" + id).data("to");
+      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+    }
+  </script>
